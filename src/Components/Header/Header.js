@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Container, Logo, Button, LinkPage } from "./headerStyle";
 import { useLocation, useNavigate } from "react-router-dom";
-import { goToHome, goToPokedex } from "../../routes/cordinator";
+import { goToHome, goToPokedex } from "../../routes/coordinator";
 import { PokemonContext } from "../../contexts/PokemonContext";
 import logo from "../../assets/logo.png";
 import arrowL from "../../assets/arrowL.png";
