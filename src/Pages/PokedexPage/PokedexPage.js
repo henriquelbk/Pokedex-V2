@@ -1,17 +1,17 @@
 import { useContext, useEffect } from "react";
-import { Button, Title, Container1, Container2 } from "./pokedexPageStylet";
+import { Button, Title, Container1, Container2 } from "./pokedexPageStyle";
 import { PokeContext } from "../../contexts/PokeContext";
-import { PokemonCard } from "./PokemonCard";
+import { PokemonCard } from "../../Components/PokemonCard/PokemonCard.js";
 import { useNavigate } from "react-router-dom";
-import { goToHome } from "../../routes/cordinator";
-import { Header } from "./Header";
+import { goToHomePage } from "../../routes/coordinator";
+import { Header } from "../../Components/Header/Header.js";
 import {
   Modal,
   ModalCloseButton,
   ModalContent,
   ModalOverlay,
 } from "@chakra-ui/react";
-import modalremover from "../../assets/modalremover.png";
+import modalremover from "../../assets/misc/modalremover.png";
 
 const PokedexPage = () => {
   const {
@@ -39,7 +39,7 @@ return (
           {pokedex.length === 0 ? (
             <div>
               <h2>Você não possui pokémons na sua pokedex. </h2>
-              <Button onClick={()=> goToHome(navigate)}>Capturar Pokémons!</Button>
+              <Button onClick={()=> goToHomePage(navigate)}>Capturar Pokémons!</Button>
             </div>
           ) : (
             pokedex.map((item) => {

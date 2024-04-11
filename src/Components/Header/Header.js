@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import { Container, Logo, Button, LinkPage } from "./headerStyle";
 import { useLocation, useNavigate } from "react-router-dom";
-import { goToHome, goToPokedex } from "../../routes/coordinator";
-import { PokemonContext } from "../../contexts/PokemonContext";
-import logo from "../../assets/logo.png";
-import arrowL from "../../assets/arrowL.png";
-import arrowR from "../../assets/arrowR'.png";
+import { goToHomePage, goToPokedex } from "../../routes/coordinator";
+import { PokemonContext } from "../../contexts/PokeContext";
+import logo from "../../assets/misc/logo.png";
+import arrowL from "../../assets/misc/arrowL.png";
+import arrowR from "../../assets/misc/arrowR.png";
 import { useMediaQuery } from "@chakra-ui/react";
 
 const Header = ({ id }) => {
@@ -25,11 +25,11 @@ const Header = ({ id }) => {
             </div>
             <div>
               {mobile ? (
-                <LinkPage onClick={() => goToHome(navigate)}>
+                <LinkPage onClick={() => goToHomePage(navigate)}>
                   <img className="icon" src={icone} alt="" />
                 </LinkPage>
               ) : (
-                <LinkPage onClick={() => goToHome(navigate)}>
+                <LinkPage onClick={() => goToHomePage(navigate)}>
                   Todos os Pokémons
                 </LinkPage>
               )}
@@ -60,11 +60,11 @@ const Header = ({ id }) => {
               </div>
               <div>
                 {mobile ? (
-                  <LinkPage onClick={() => goToHome(navigate)}>
+                  <LinkPage onClick={() => goToHomePage(navigate)}>
                     <img className="icon" src={icone} alt="" />
                   </LinkPage>
                 ) : (
-                  <LinkPage onClick={() => goToHome(navigate)}>
+                  <LinkPage onClick={() => goToHomePage(navigate)}>
                     Todos os Pokémons
                   </LinkPage>
                 )}
@@ -97,3 +97,4 @@ const Header = ({ id }) => {
     </>
   );
 };
+export default Header

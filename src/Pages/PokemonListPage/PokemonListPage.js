@@ -1,5 +1,5 @@
 import PokemonCard from "../../Components/PokemonCard/PokemonCard";
-import { Container, Main } from "./pokemonListStyle";
+import { Container, Main } from "../PokemonListPage/pokemonListPageStyle";
 import { PokeContext } from "../../contexts/PokeContext";
 import modalcapturar from "../../assets/modalcapturar.png";
 import Header from "../../Components/Header/Header";

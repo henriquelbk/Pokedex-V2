@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pokeball from "../../assets/pokeball.png";
+import pokeball from "../../assets/misc/pokeball.png";
 
 export const Container = styled.div`
   height: 100%;

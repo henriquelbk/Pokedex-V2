@@ -9,8 +9,8 @@ import {
   ButtonDetails,
 } from "./pokemonCardStyle";
 import { useLocation, useNavigate } from "react-router-dom";
-import { goToDetails } from "../../routes/cordinator";
-import { PokemonContext } from "../../contexts/PokemonContext";
+import { goToDetailsPage } from "../../routes/coordinator";
+import { PokeContext } from "../../contexts/PokeContext";
 
 const PokemonCard = ({
   addToPokedex,
@@ -20,7 +20,7 @@ const PokemonCard = ({
   id,
   name,
 }) => {
-  const { background, backgroundImg } = useContext(PokemonContext);
+  const { background, backgroundImg } = useContext(PokeContext);
 
   const backgroundColor = background(type[0]);
 
@@ -49,7 +49,7 @@ const PokemonCard = ({
         </ContainerId>
         <ContainerButton>
           <div>
-            <ButtonDetails onClick={() => goToDetails(navigate, id)}>
+            <ButtonDetails onClick={() => goToDetailsPage(navigate, id)}>
               Detalhes
             </ButtonDetails>
           </div>

@@ -1,7 +1,7 @@
-import logo from "../../assets/logo.png";
-import error from "../../assets/errorImage.png";
+import logo from "../../assets/misc/logo.png";
+import error from "../../assets/misc/errorImage.png";
 import { Section, Main, Button } from "./errorPageStyle";
-import { goToHome } from "../../routes/cordinator";
+import { goToHomePage } from "../../routes/coordinator";
 import { useNavigate } from "react-router-dom";
 
 const ErrorPage = () => {
@@ -16,7 +16,7 @@ const ErrorPage = () => {
         <div>
           <h1>Error 404.</h1>
           <h2>We couldn't find what you're looking for.</h2>
-          <Button onClick={() => goToHome(navigate)}>
+          <Button onClick={() => goToHomePage(navigate)}>
             Back to the main page
           </Button>
         </div>

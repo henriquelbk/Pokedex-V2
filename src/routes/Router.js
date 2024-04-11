@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PokedexPage from "../Pages/PokedexPage/PokedexPage";
-import PokemonDetailPage from "../Pages/PokemonDetailPage/PokemonDetailPage";
-import PokemonsListPage from "../Pages/PokemonsListPage/PokemonsListPage";
+import PokemonDetailsPage from "../Pages/PokemonDetailPage/PokemonDetailPage";
+import PokemonListPage from "../Pages/PokemonListPage";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Footer from "../Components/Footer/Footer";
 
@@ -11,9 +11,9 @@ const Router = () => {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<PokemonsListPage />} />
+          <Route path="/" element={<PokemonListPage />} />
           <Route path="/pokedex" element={<PokedexPage />} />
-          <Route path='/pokemondetails/:id' element={<PokemonDetailPage/>} />
+          <Route path='/pokemondetails/:id' element={<PokemonDetailsPage/>} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
