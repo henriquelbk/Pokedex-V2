@@ -1,17 +1,17 @@
 import { useContext, useEffect, useState } from "react";
-import { Container, Panel, Titulo, Moves, Stats } from "./pokemonDetailStyle";
+import { Container, Panel, Titulo, Moves, Stats } from "./pokemonDetailPageStyle";
 import Header from "../../Components/Header/Header";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { PokeContext } from "../../contexts/PokemonContext";
+import { PokeContext } from "../../contexts/PokeContext";
 import {
   Modal,
   ModalCloseButton,
   ModalContent,
   ModalOverlay,
 } from "@chakra-ui/react";
-import modalcapturar from "../../assets/modalcapturar.png";
-import modalremover from "../../assets/modalremover.png";
+import modalcapturar from "../../assets/misc/modalcapturar.png";
+import modalremover from "../../assets/misc/modalremover.png";
 
 const PokemonDetailPage = () => {
   const { background, backgroundImg, closeModal, isOpen, pokedex } =

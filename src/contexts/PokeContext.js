@@ -1,26 +1,26 @@
 import { createContext, useEffect, useState } from "react";
 import axios from "axios";
-import bug from "../assets/types-image/bug.png";
-import dark from "../assets/types-image/dark.png";
-import dragon from "../assets/types-image/dragon.png";
-import electric from "../assets/types-image/electric.png";
-import fairy from "../assets/types-image/fairy.png";
-import fighting from "../assets/types-image/fighting.png";
-import fire from "../assets/types-image/fire.png";
-import flying from "../assets/types-image/flying.png";
-import ghost from "../assets/types-image/ghost.png";
-import grass from "../assets/types-image/grass.png";
-import ground from "../assets/types-image/ground.png";
-import ice from "../assets/types-image/ice.png";
-import normal from "../assets/types-image/normal.png";
-import poison from "../assets/types-image/poison.png";
-import psychic from "../assets/types-image/psychic.png";
-import rock from "../assets/types-image/rock.png";
-import steel from "../assets/types-image/steel.png";
-import water from "../assets/types-image/water.png";
+import bug from "../assets/types/bug.png";
+import dark from "../assets/types/dark.png";
+import dragon from "../assets/types/dragon.png";
+import electric from "../assets/types/electric.png";
+import fairy from "../assets/types/fairy.png";
+import fighting from "../assets/types/fighting.png";
+import fire from "../assets/types/fire.png";
+import flying from "../assets/types/flying.png";
+import ghost from "../assets/types/ghost.png";
+import grass from "../assets/types/grass.png";
+import ground from "../assets/types/ground.png";
+import ice from "../assets/types/ice.png";
+import normal from "../assets/types/normal.png";
+import poison from "../assets/types/poison.png";
+import psychic from "../assets/types/psychic.png";
+import rock from "../assets/types/rock.png";
+import steel from "../assets/types/steel.png";
+import water from "../assets/types/water.png";
 import { useDisclosure } from "@chakra-ui/react";
 
-export const PokemonContext = createContext();
+export const PokeContext = createContext();
 
 const PokemonProvider = ({ children }) => {
   const [pokemon, setPokemon] = useState([]);
@@ -218,7 +218,7 @@ const PokemonProvider = ({ children }) => {
   }, []);
 
   return (
-    <PokemonContext.Provider
+    <PokeContext.Provider
       value={{
         pokemon,
         setPokedex,
@@ -235,7 +235,7 @@ const PokemonProvider = ({ children }) => {
       }}
     >
       {children}
-    </PokemonContext.Provider>
+    </PokeContext.Provider>
   );
 };
 
