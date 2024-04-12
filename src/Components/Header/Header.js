@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { Container, Logo, Button, LinkPage } from "./headerStyle";
 import { useLocation, useNavigate } from "react-router-dom";
 import { goToHomePage, goToPokedex } from "../../routes/coordinator";
-import { PokemonContext } from "../../contexts/PokeContext";
+import { PokeContext } from "../../contexts/PokeContext";
 import logo from "../../assets/misc/logo.png";
 import arrowL from "../../assets/misc/arrowL.png";
 import arrowR from "../../assets/misc/arrowR.png";
@@ -10,7 +10,7 @@ import { useMediaQuery } from "@chakra-ui/react";
 
 const Header = ({ id }) => {
   const { addToPokedex, removeFromPokedex, pokedex } =
-    useContext(PokemonContext);
+    useContext(PokeContext);
   const [mobile] = useMediaQuery("(max-width: 767px)");
   const navigate = useNavigate();
   const location = useLocation();
