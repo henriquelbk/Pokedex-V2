@@ -1,10 +1,10 @@
 import { useContext, useEffect } from "react";
 import { Button, Title, Container1, Container2 } from "./pokedexPageStyle";
 import { PokeContext } from "../../contexts/PokeContext";
-import { PokemonCard } from "../../Components/PokemonCard";
+import PokemonCard from "../../Components/PokemonCard/PokemonCard";
 import { useNavigate } from "react-router-dom";
 import { goToHomePage } from "../../routes/coordinator";
-import { Header } from "../../Components/Header/Header.js";
+import Header from "../../Components/Header/Header";
 import {
   Modal,
   ModalCloseButton,
