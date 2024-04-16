@@ -21,12 +21,12 @@ const Header = ({ id }) => {
         <Container>
           <div>
             <div>
-              {mobile ? null : <img className="icon" src={icone} alt="" />}
+              {mobile ? null : <img className="icon" src={arrowL} alt="" />}
             </div>
             <div>
               {mobile ? (
                 <LinkPage onClick={() => goToHomePage(navigate)}>
-                  <img className="icon" src={icone} alt="" />
+                  <img className="icon" src={arrowL} alt="" />
                 </LinkPage>
               ) : (
                 <LinkPage onClick={() => goToHomePage(navigate)}>
@@ -43,7 +43,7 @@ const Header = ({ id }) => {
           <Logo src={logo} />
           {mobile ? (
             <LinkPage onClick={() => goToPokedex(navigate)}>
-              <img className="icon" src={icone2} alt="" />
+              <img className="icon" src={arrowR} alt="" />
             </LinkPage>
           ) : (
             <Button className="blue" onClick={() => goToPokedex(navigate)}>
@@ -56,12 +56,12 @@ const Header = ({ id }) => {
           <Container>
             <div>
               <div>
-                {mobile ? null : <img className="icon" src={icone} alt="" />}
+                {mobile ? null : <img className="icon" src={arrowL} alt="" />}
               </div>
               <div>
                 {mobile ? (
                   <LinkPage onClick={() => goToHomePage(navigate)}>
-                    <img className="icon" src={icone} alt="" />
+                    <img className="icon" src={arrowL} alt="" />
                   </LinkPage>
                 ) : (
                   <LinkPage onClick={() => goToHomePage(navigate)}>

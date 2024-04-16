@@ -1,4 +1,5 @@
 import PokemonCard from "../../Components/PokemonCard/PokemonCard";
+import { useContext } from "react";
 import { Container, Main } from "../PokemonListPage/pokemonListPageStyle";
 import { PokeContext } from "../../contexts/PokeContext";
 import modalcapturar from "../../assets/misc/modalcapturar.png";
