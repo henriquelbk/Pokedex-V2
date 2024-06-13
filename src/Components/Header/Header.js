@@ -30,7 +30,7 @@ const Header = ({ id }) => {
                 </LinkPage>
               ) : (
                 <LinkPage onClick={() => goToHomePage(navigate)}>
-                  Todos os Pokémons
+                  All Pokémons
                 </LinkPage>
               )}
             </div>
@@ -65,7 +65,7 @@ const Header = ({ id }) => {
                   </LinkPage>
                 ) : (
                   <LinkPage onClick={() => goToHomePage(navigate)}>
-                    Todos os Pokémons
+                    All Pokémons
                   </LinkPage>
                 )}
               </div>
@@ -79,7 +79,7 @@ const Header = ({ id }) => {
                 </Button>
               ) : (
                 <Button onClick={() => removeFromPokedex(id)} className="red">
-                  Excluir da Pokédex
+                  Remove from Pokédex
                 </Button>
               )
             ) : mobile ? (
@@ -88,7 +88,7 @@ const Header = ({ id }) => {
               </Button>
             ) : (
               <Button onClick={() => addToPokedex(id)} className="blue">
-                Adicionar a Pokédex
+                Add to Pokédex
               </Button>
             )}
           </Container>
