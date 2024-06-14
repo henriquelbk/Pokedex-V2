@@ -50,14 +50,14 @@ const PokemonCard = ({
         <ContainerButton>
           <div>
             <ButtonDetails onClick={() => goToDetailsPage(navigate, id)}>
-              Detalhes
+              Details
             </ButtonDetails>
           </div>
 
           {location.pathname === "/" && (
             <div>
               <ButtonCapture onClick={() => addToPokedex(id)}>
-                Capturar!
+                Capture!
               </ButtonCapture>
             </div>
           )}
@@ -65,7 +65,7 @@ const PokemonCard = ({
           {location.pathname === "/pokedex" && (
             <div>
               <ButtonExclude onClick={() => removeFromPokedex(id)}>
-                Excluir
+                Remove
               </ButtonExclude>
             </div>
           )}
