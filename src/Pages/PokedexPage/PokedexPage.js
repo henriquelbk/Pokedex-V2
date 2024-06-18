@@ -38,7 +38,7 @@ return (
         <Container2>
           {pokedex.length === 0 ? (
             <div>
-              <h2>Your Pokédex is empty. </h2>
+              <h2>Your Pokédex is emptyj. </h2>
               <Button onClick={()=> goToHomePage(navigate)}>Capturar Pokemons!</Button>
             </div>
           ) : (
