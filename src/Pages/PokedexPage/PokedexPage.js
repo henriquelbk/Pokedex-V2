@@ -39,7 +39,7 @@ return (
           {pokedex.length === 0 ? (
             <div>
               <h2>Your Pokédex is empty. </h2>
-              <Button onClick={()=> goToHomePage(navigate)}>Capturar Pokemons!</Button>
+              <Button onClick={()=> goToHomePage(navigate)}>Capture Pokémon!</Button>
             </div>
           ) : (
             pokedex.map((item) => {
