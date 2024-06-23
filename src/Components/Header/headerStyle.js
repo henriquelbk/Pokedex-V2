@@ -59,6 +59,8 @@ export const LinkPage = styled.h1`
   align-self: center;
   text-decoration: none;
   color: black;
+  width: 20vw;
+  padding-left: 2vw;
 
   &:hover {
     text-decoration: underline;
@@ -78,7 +80,7 @@ export const Button = styled.button`
   justify-self: end;
   margin-right: 42px;
   cursor: pointer;
-  transition: transform 0.3s cubic-bezier(0.42, 0, 0.58, 1);
+  transition: transform 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 
   &.blue {
     background-color: #33a4f5;

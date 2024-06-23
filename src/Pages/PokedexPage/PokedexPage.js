@@ -34,12 +34,12 @@ const PokedexPage = () => {
 return (
     <Container1>
       <Header />
-        <Title>Meus Pokemons</Title>
+        <Title>My Pokémons</Title>
         <Container2>
           {pokedex.length === 0 ? (
             <div>
-              <h2>Você não possui pokémons na sua pokedex. </h2>
-              <Button onClick={()=> goToHomePage(navigate)}>Capturar Pokemons!</Button>
+              <h2>Your Pokédex is empty. </h2>
+              <Button onClick={()=> goToHomePage(navigate)}>Capture Pokémon!</Button>
             </div>
           ) : (
             pokedex.map((item) => {

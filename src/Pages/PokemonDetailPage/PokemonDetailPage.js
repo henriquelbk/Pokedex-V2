@@ -44,7 +44,7 @@ const PokemonDetailPage = () => {
   return (
     <Container>
       <Header id={pokemonDetails.id} />
-      <Titulo>Detalhes</Titulo>
+      <Titulo>Details</Titulo>
       <Panel style={{ backgroundColor }}>
         <img
           className="imgfrente"

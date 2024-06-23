@@ -19,7 +19,7 @@ const PokemonListPage = () => {
     <>
       <Header />
 
-      <Main>Todos os Pokémons</Main>
+      <Main>All Pokémons</Main>
       <Container>
         {pokemon.map((item) => {
           const types = item.data.types.map((types) => types.type.name);
