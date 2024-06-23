@@ -59,6 +59,8 @@ export const LinkPage = styled.h1`
   align-self: center;
   text-decoration: none;
   color: black;
+  width: 20vw;
+  padding-left: 2vw;
 
   &:hover {
     text-decoration: underline;
