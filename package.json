@@ -1,7 +1,6 @@
 {
   "name": "projeto-react-apis",
   "version": "0.1.0",
-  "homepage": "https://github.com/henriquelbk/Pokedex-V2",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",
